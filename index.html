@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <title>Portfolio Ilyas Yasirudin</title>
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <header
+      class="absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#home" class="block py-6 text-lg font-bold text-primary"
+              >ilyasyasirudin</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line-2 origin-top-right transition duration-500 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line-2 origin-bottom-left translate-x-[100%] transition duration-500 ease-in-out"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#keahlian"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Keahlian</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Portfolio</a
+                  >
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Contact</a
+                  >
+                </li>
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div>
+                    <button
+                      id="sun"
+                      class="h-6 w-6 rounded-lg bg-slate-700 p-1 text-white transition duration-500 md:h-7 md:w-7 md:bg-transparent lg:bg-transparent"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      id="moon"
+                      class="h-6 w-6 rounded-lg bg-slate-100 p-1 transition duration-500 md:h-7 md:w-7 md:bg-transparent lg:bg-transparent"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="#0f172a"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="0"
+                          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section
+      id="home"
+      class="bg-headerbeam bg-cover bg-bottom bg-no-repeat pt-36 bg-blend-multiply dark:bg-hiro lg:pt-16"
+    >
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Hai, saya
+              <span
+                class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl"
+                >Ilyas Yasirudin</span
+              >
+            </h1>
+            <h2
+              id="skill"
+              class="text-lg font-medium text-secondary lg:text-2xl"
+            ></h2>
+
+            <h2 class="mb-8 text-base font-semibold text-secondary md:text-xl">
+              <span class="inline-block text-dark dark:text-white"
+                >Experience Hunter</span
+              >
+            </h2>
+            <a
+              href="https://wa.me/089646378051"
+              class="mr-2 rounded-xl bg-primary px-8 py-3 text-sm font-medium text-white hover:opacity-80 hover:shadow-lg focus:outline-none focus:ring active:bg-indigo-500"
+              >Hubungi Saya
+            </a>
+
+            <a
+              class="group relative mt-5 inline-flex items-center overflow-hidden rounded-xl bg-primary px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+              href="dist/file/CV-Ilyas.pdf"
+              download
+            >
+              <span
+                class="absolute left-0 -translate-x-full transition-transform group-hover:translate-x-4"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+              </span>
+
+              <span class="text-sm font-medium transition-all group-hover:ml-4">
+                Download CV
+              </span>
+            </a>
+          </div>
+
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative lg:right-0 lg:mt-9">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 500 500"
+                width="100%"
+                id="blobSvg"
+                filter="blur(0px)"
+                style="opacity: 1"
+                transform="rotate(0)"
+              >
+                <image
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  clip-path="url(#shape)"
+                  id="imgHero"
+                  href="dist/img/bg-ilyas-w.png"
+                  preserveAspectRatio=""
+                ></image>
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop
+                      offset="0%"
+                      style="stop-color: rgb(238, 205, 163)"
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      style="stop-color: rgb(239, 98, 159)"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+                <clipPath id="shape">
+                  <path id="blob" fill="url(#gradient)">
+                    <animate
+                      attributeName="d"
+                      dur="10000ms"
+                      repeatCount="indefinite"
+                      values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;"
+                    ></animate>
+                  </path>
+                </clipPath>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="bg-grid pt-36 pb-36 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-10 w-full px-4 text-center lg:w-full">
+            <h2
+              data-aos="zoom-in"
+              data-duration="1000"
+              data-aos-delay="300"
+              class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl"
+            >
+              Try and error “Practice Makes Perfect”
+            </h2>
+            <figure>
+              <blockquote
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-duration="500"
+              >
+                <p class="mx-auto mt-6 max-w-3xl text-lg dark:text-slate-400">
+                  Saya freshgraduate lulusan teknik komputer, walaupun minim
+                  akan pengalaman namun secara skill dapat diandalkan. Berbekal
+                  ilmu dari pendidikan formal maupun belajar secara mandiri
+                  melalui platform dan forum, saya optimis dapat bekerja secara
+                  indvidu maupun kolaborasi team.
+                </p>
+              </blockquote>
+              <figcaption
+                data-aos="fade-up"
+                data-aos-delay="900"
+                data-duration="500"
+                class="mt-6 flex items-center justify-center space-x-4 text-left"
+              >
+                <img
+                  src="dist/img/ilyas-quote.jpg"
+                  alt=""
+                  class="h-14 w-14 rounded-full"
+                />
+                <div>
+                  <div class="font-semibold text-primary dark:text-white">
+                    Ilyas Yasirudin
+                  </div>
+                  <div class="mt-0.5 text-sm leading-6 text-slate-400">
+                    Job Hunter
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Skill Section Start -->
+    <section id="keahlian" class="bg-slate-800 pt-16 pb-16 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 text-center">
+            <!-- <h4 class="mb-2 text-lg font-semibold text-primary">Skill</h4> -->
+            <h2
+              data-aos="fade-up"
+              class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
+            >
+              Keahlian
+            </h2>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="relative w-96 overflow-hidden rounded-2xl bg-secondary p-6 shadow-lg md:mb-4 lg:mr-4 lg:mb-0"
+          >
+            <img
+              alt="moto"
+              src="/dist/img/logo/Tagcode.svg"
+              class="absolute -right-10 -bottom-16 mb-4 bg-cover md:mb-4"
+            />
+            <div class="w-4/6 text-xl font-bold md:text-2xl">
+              Web Development
+            </div>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="relative mt-4 w-96 overflow-hidden rounded-2xl bg-secondary p-6 shadow-lg md:mt-0 lg:mt-0"
+          >
+            <img
+              alt="moto"
+              src="/dist/img/logo/Desain Grafis.svg"
+              class="absolute -right-10 -bottom-16 mb-4 bg-cover"
+            />
+            <div class="w-4/6 text-2xl font-bold">Graphic Design</div>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-down"
+          data-aos-delay="500"
+          class="mx-auto mt-16 text-center"
+        >
+          <h4 class="mb-2 text-xl font-semibold text-primary">
+            Library | Framework | App
+          </h4>
+          <h4 class="mb-2 text-lg font-semibold text-white">Commonly Used</h4>
+        </div>
+
+        <div
+          data-aos="fade-down"
+          data-aos-delay="800"
+          data-duration="1000"
+          class="w-full px-4 py-4"
+        >
+          <div class="flex flex-wrap items-center justify-center">
+            <a
+              href="#"
+              class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/logo/HTML5.svg" alt="Google" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/logo/CSS3.svg" alt="Gojek" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/logo/JavaScript.svg" alt="Tokopedia" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/logo/Bootstrap_logo.svg" alt="traveloka" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/logo/Tailwind_CSS_Logo.svg" alt="traveloka" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/logo/Laravel.svg" alt="traveloka" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/logo/Adobe_Photoshop.svg" alt="traveloka" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/logo/Coreldraw.svg" alt="traveloka" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/logo/Microsoft_Office.svg" alt="traveloka" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skill Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="bg-grid pb-16 dark:bg-dark">
+      <div
+        class="w-full bg-beam4 bg-no-repeat bg-center dark:bg-beam3"
+      >
+        <div class="container">
+          <div class="flex flex-wrap">
+            <div class="mx-auto w-full pt-16">
+              <div
+                data-aos="zoom-in"
+                data-duration="1000"
+                class="mx-auto mb-16 max-w-xl text-center"
+              >
+                <h4
+                  class="mb-2 text-lg font-semibold text-primary dark:text-white"
+                >
+                  Portfolio
+                </h4>
+                <h2
+                  class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
+                >
+                  Projek Yang Pernah Dibuat
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
+            >
+              <div
+                data-aos="zoom-out-right"
+                data-aos-delay="500"
+                class="p-4 md:w-1/2"
+              >
+                <a href="#portfolio" class="block">
+                  <img
+                    src="dist/img/Web_Seo_Himakom.png"
+                    alt=""
+                    class="aspect-video rounded-bl-3xl rounded-tr-3xl object-cover"
+                    loading="lazy"
+                  />
+
+                  <div
+                    class="mt-4 flex items-center justify-center space-x-4 dark:text-white"
+                  >
+                    <p class="font-medium">Sistem Informasi Himakom</p>
+
+                    <span class="h-px w-8 bg-primary"></span>
+
+                    <p class="opacity-50">Web | Laravel</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                data-aos="zoom-out-left"
+                data-aos-delay="500"
+                class="p-4 md:w-1/2"
+              >
+                <a
+                  href="https://jtera.polteksmi.ac.id/index.php/jtera/article/view/633/267"
+                  class="block"
+                >
+                  <img
+                    src="dist/img/Web_Spp_Bot.JPG"
+                    alt=""
+                    class="aspect-video rounded-tl-3xl rounded-br-3xl object-cover"
+                  />
+
+                  <div
+                    class="mt-4 flex items-center justify-center space-x-4 dark:text-white"
+                  >
+                    <p class="font-medium">Integrasi Web dan Bot</p>
+
+                    <span class="h-px w-8 bg-primary"></span>
+
+                    <p class="opacity-50">Web | Laravel | Bot</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                data-aos="zoom-in-right"
+                data-aos-delay="200"
+                class="p-4 md:w-1/2"
+              >
+                <a href="#portfolio" class="block">
+                  <img
+                    src="dist/img/Aplikasi_android.jpg"
+                    alt=""
+                    class="aspect-video rounded-bl-3xl rounded-tr-3xl object-cover"
+                  />
+
+                  <div
+                    class="mt-4 flex items-center justify-center space-x-4 dark:text-white"
+                  >
+                    <p class="font-medium">Aplikasi Kas</p>
+
+                    <span class="h-px w-8 bg-primary"></span>
+
+                    <p class="opacity-50">Mobile App | Android</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                data-aos="zoom-in-left"
+                data-aos-delay="200"
+                class="p-4 md:w-1/2"
+              >
+                <a href="#portfolio" class="block">
+                  <img
+                    src="dist/img/Karya_desain.png"
+                    alt=""
+                    class="aspect-video rounded-tl-3xl rounded-br-3xl object-cover"
+                    loading="lazy"
+                  />
+
+                  <div
+                    class="mt-4 flex items-center justify-center space-x-4 dark:text-white"
+                  >
+                    <p class="font-medium">Desain</p>
+
+                    <span class="h-px w-8 bg-primary"></span>
+
+                    <p class="opacity-50">Adobe PS | Coreldraw</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="py-16 dark:bg-slate-800">
+      <div class="container">
+        <div
+          class="mx-auto grid max-w-6xl grid-cols-1 py-6 md:grid-cols-2 md:divide-x lg:px-8"
+        >
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-duration="500"
+            class="items-center text-dark dark:text-white"
+          >
+            <h1 class="text-4xl font-bold">Hubungi</h1>
+            <p class="pt-2 pb-4">Isi formulir untuk memulai percakapan</p>
+            <div class="space-y-4">
+              <p class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="mr-2 h-5 w-5 sm:mr-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Nagrak Selatan Kab Sukabumi, 43356</span>
+              </p>
+              <p class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="mr-2 h-5 w-5 sm:mr-6"
+                >
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                  ></path>
+                </svg>
+                <span
+                  ><a href="https://wa.me/089646378051">0896-4637-8051</a></span
+                >
+              </p>
+              <p class="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="mr-2 h-5 w-5 sm:mr-6"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  ></path>
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  ></path>
+                </svg>
+                <span>ilyasyasirudin@gmail.com</span>
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-duration="500"
+            class="mt-6 py-6 md:py-0 md:px-8"
+          >
+            <div class="items-center">
+              <div class="w-full">
+                <label
+                  class="mb-2 block text-sm font-medium text-gray-600 dark:text-gray-200"
+                  >Nama</label
+                >
+
+                <input
+                  class="block w-full rounded-xl border bg-white py-2 text-gray-700 focus:border-indigo-600 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300"
+                  type="text"
+                />
+              </div>
+
+              <div class="mt-4 w-full">
+                <label
+                  class="mb-2 block text-sm font-medium text-gray-600 dark:text-gray-200"
+                  >E-mail</label
+                >
+
+                <input
+                  class="block w-full rounded-xl border bg-white px-4 py-2 text-gray-700 focus:border-indigo-600 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300"
+                  type="email"
+                />
+              </div>
+            </div>
+
+            <div class="mt-4 w-full">
+              <label
+                class="mb-2 block text-sm font-medium text-gray-600 dark:text-gray-200"
+                >Pesan</label
+              >
+
+              <textarea
+                class="block h-40 w-full rounded-xl border bg-white px-4 py-2 text-gray-700 focus:border-indigo-600 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300"
+              ></textarea>
+            </div>
+
+            <div class="mt-6 flex justify-center">
+              <button
+                class="rounded-xl bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              >
+                Kirim Pesan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark pb-12">
+      <div class="container">
+        <div class="w-full pt-10">
+          <div class="mb-5 flex items-center justify-center">
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/ilyas_yaz"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="https://facebook.com/ilyas.yasirudin"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                viewBox="0 0 1792 1792"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"
+                ></path>
+              </svg>
+            </a>
+
+            <!-- Whatsup -->
+            <a
+              href="https://wa.me/089646378051"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>WhatsApp</title>
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                />
+              </svg>
+            </a>
+            <!-- Github -->
+            <a
+              href="https://github.com/ilyasysr"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="text-center text-xs font-medium text-slate-500">
+            Dibuat dengan <span class="text-pink-500">❤️</span> oleh
+            <a
+              href="https://instagram.com/ilyas_yaz"
+              target="_blank"
+              class="font-bold text-primary"
+              >Ilyas</a
+            >, menggunakan
+            <a
+              href="https://tailwindcss.com"
+              target="_blank"
+              class="font-bold text-sky-500"
+              >Tailwind CSS</a
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a
+      href="#home"
+      class="fixed bottom-4 right-4 z-50 hidden h-14 w-14 animate-bounce items-center justify-center rounded-full bg-primary p-4"
+      id="to-top"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
+    <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      var skill = document.getElementById("skill");
+      gsap.to("#skill", {
+        duration: 4,
+        text: "Web Develover || Graphic Designer",
+      });
+    </script>
+  </body>
+</html>

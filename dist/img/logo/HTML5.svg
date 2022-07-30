@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="102.322mm" height="144.208mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 10232 14421"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="507" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="Impact">
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="L" horiz-adv-x="380"><path d="M246.998 791.002l0 -633.002 124.001 0 0 -158 -329.997 0 0 791.002 205.996 0z"/></glyph>
+   <glyph unicode="T" horiz-adv-x="461"><path d="M455.001 791.002l0 -158.004 -121.003 0 0 -632.998 -205.996 0 0 632.998 -122.002 0 0 158.004 449.002 0z"/></glyph>
+   <glyph unicode="H" horiz-adv-x="555"><path d="M512.998 791.002l0 -791.002 -206 0 0 332 -59.9998 0 0 -332 -205.996 0 0 791.002 205.996 0 0 -283.004 59.9998 0 0 283.004 206 0z"/></glyph>
+   <glyph unicode="M" horiz-adv-x="716"><path d="M674.999 791.002l0 -791.002 -180 0 -0.499626 533.999 -71.4994 -533.999 -125.999 0 -75.5004 522 -0.499626 -522 -180 0 0 791.002 265.83 0c7.50252,-47.8341 15.6671,-104.17 24.502,-168.5l29.1652 -200.834 46.8349 369.334 267.666 0z"/></glyph>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Impact";src:url("#FontID0") format(svg)}
+    .fil4 {fill:black}
+    .fil0 {fill:#E44D26}
+    .fil3 {fill:#EBEBEB}
+    .fil1 {fill:#F16529}
+    .fil2 {fill:white}
+    .fnt0 {font-weight:normal;font-size:2461.84px;font-family:'Impact'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2327940017632">
+   <g>
+    <path class="fil0" d="M9300 13259l-4190 1162 -4179 -1161 -931 -10444 10232 0 -932 10443zm0 0l0 0 0 0z"/>
+   </g>
+   <g>
+    <path class="fil1" d="M9299 3670l-4183 0 0 9863 3386 -939 797 -8924zm0 0l0 0 0 0z"/>
+   </g>
+   <g>
+    <path class="fil2" d="M8321 4951l-3209 0 0 1281 3094 0 115 -1281zm-230 2593l-2979 0 0 4661 2627 -729 352 -3932zm-2979 1281l1579 0 -149 1662 -1430 385 0 -2047zm0 0l0 0 0 0z"/>
+   </g>
+   <g>
+    <path class="fil3" d="M2249 8825l2866 0 0 -1281 -1695 0 -117 -1312 1812 0 0 -1281 -3212 0 346 3874zm236 2652l2627 728 4 -2 0 -1332 -4 1 -1428 -384 -91 -1023 -1287 0 179 2012zm0 0l0 0 0 0z"/>
+   </g>
+   <g transform="matrix(1.38401 0 0 1 -5642.29 -5263.09)">
+    <text x="5116" y="7210"  class="fil4 fnt0">HTML</text>
+   </g>
+  </g>
+ </g>
+</svg>
