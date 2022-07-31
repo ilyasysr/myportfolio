@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,7 +24,7 @@
   <body>
     <!-- Header Start -->
     <header
-      class="absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
+      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
     >
       <div class="container">
         <div class="relative flex items-center justify-between">
@@ -143,7 +143,7 @@
     <!-- Hero Section Start -->
     <section
       id="home"
-      class="bg-headerbeam bg-cover bg-bottom bg-no-repeat pt-36 bg-blend-multiply dark:bg-hiro lg:pt-16"
+      class="bg-headerbeam bg-cover bg-bottom bg-no-repeat pt-36 pb-32 bg-blend-multiply dark:bg-hiro lg:pt-16"
     >
       <div class="container">
         <div class="flex flex-wrap">
@@ -166,13 +166,13 @@
               >
             </h2>
             <a
-              href="https://wa.me/089646378051"
-              class="mr-2 rounded-xl bg-primary px-8 py-3 text-sm font-medium text-white hover:opacity-80 hover:shadow-lg focus:outline-none focus:ring active:bg-indigo-500"
+              href="https://wa.me/+6289646378051"
+              class="mr-2 rounded-xl bg-primary px-8 py-3 text-sm font-medium text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
               >Hubungi Saya
             </a>
 
             <a
-              class="group relative mt-5 inline-flex items-center overflow-hidden rounded-xl bg-primary px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+              class="group relative mt-5 inline-flex items-center overflow-hidden rounded-xl bg-primary px-8 py-3 text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg "
               href="dist/file/CV-Ilyas.pdf"
               download
             >
@@ -271,11 +271,11 @@
             >
               Try and error “Practice Makes Perfect”
             </h2>
-            <figure>
+            <figure data-aos="fade-up"
+            data-aos-delay="300"
+            data-duration="500"
+           > 
               <blockquote
-                data-aos="fade-up"
-                data-aos-delay="600"
-                data-duration="500"
               >
                 <p class="mx-auto mt-6 max-w-3xl text-lg dark:text-slate-400">
                   Saya freshgraduate lulusan teknik komputer, walaupun minim
@@ -286,9 +286,7 @@
                 </p>
               </blockquote>
               <figcaption
-                data-aos="fade-up"
-                data-aos-delay="900"
-                data-duration="500"
+               
                 class="mt-6 flex items-center justify-center space-x-4 text-left"
               >
                 <img
@@ -317,7 +315,6 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
-            <!-- <h4 class="mb-2 text-lg font-semibold text-primary">Skill</h4> -->
             <h2
               data-aos="fade-up"
               class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
@@ -328,33 +325,33 @@
         </div>
 
         <div class="flex flex-wrap items-center justify-center">
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="relative w-96 overflow-hidden rounded-2xl bg-secondary p-6 shadow-lg md:mb-4 lg:mr-4 lg:mb-0"
+          <div data-aos="zoom-in"
+          data-duration="1000"
+          data-aos-delay="300"
+            
+            class="relative w-96 overflow-hidden rounded-2xl bg-indigo-400  p-6 shadow-lg md:mb-4 lg:mr-4 lg:mb-0"
           >
             <img
               alt="moto"
-              src="/dist/img/logo/Tagcode.svg"
+              src="dist/img/logo/Tagcode.svg"
               class="absolute -right-10 -bottom-16 mb-4 bg-cover md:mb-4"
             />
-            <div class="w-4/6 text-xl font-bold md:text-2xl">
+            <div class="w-4/6 text-lg font-bold md:text-2xl lg:text-2xl ">
               Web Development
             </div>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="relative mt-4 w-96 overflow-hidden rounded-2xl bg-secondary p-6 shadow-lg md:mt-0 lg:mt-0"
+          <div  data-aos="zoom-in"
+          data-duration="1000"
+          data-aos-delay="300"
+            
+            class="relative mt-4 w-96 overflow-hidden rounded-2xl bg-indigo-400 p-6 shadow-lg md:mt-0 lg:mt-0"
           >
             <img
               alt="moto"
-              src="/dist/img/logo/Desain Grafis.svg"
+              src="dist/img/logo/Desain Grafis.svg"
               class="absolute -right-10 -bottom-16 mb-4 bg-cover"
             />
-            <div class="w-4/6 text-2xl font-bold">Graphic Design</div>
+            <div class="w-4/6 text-lg md:text-2xl lg:text-2xl font-bold">Graphic Design</div>
           </div>
         </div>
 
@@ -377,7 +374,7 @@
         >
           <div class="flex flex-wrap items-center justify-center">
             <a
-              href="#"
+              href="#keahlian"
               class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
               <img src="dist/img/logo/HTML5.svg" alt="Google" />
@@ -389,43 +386,43 @@
               <img src="dist/img/logo/CSS3.svg" alt="Gojek" />
             </a>
             <a
-              href="#"
+              href="#keahlian"
               class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
               <img src="dist/img/logo/JavaScript.svg" alt="Tokopedia" />
             </a>
             <a
-              href="#"
+              href="#keahlian"
               class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
               <img src="dist/img/logo/Bootstrap_logo.svg" alt="traveloka" />
             </a>
             <a
-              href="#"
+              href="#keahlian"
               class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
               <img src="dist/img/logo/Tailwind_CSS_Logo.svg" alt="traveloka" />
             </a>
             <a
-              href="#"
+              href="#keahlian"
               class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
               <img src="dist/img/logo/Laravel.svg" alt="traveloka" />
             </a>
             <a
-              href="#"
+              href="#keahlian"
               class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
               <img src="dist/img/logo/Adobe_Photoshop.svg" alt="traveloka" />
             </a>
             <a
-              href="#"
+              href="#keahlian"
               class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
               <img src="dist/img/logo/Coreldraw.svg" alt="traveloka" />
             </a>
             <a
-              href="#"
+              href="#keahlian"
               class="mx-4 max-w-[60px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
               <img src="dist/img/logo/Microsoft_Office.svg" alt="traveloka" />
@@ -439,17 +436,20 @@
     <!-- Portfolio Section Start -->
     <section id="portfolio" class="bg-grid pb-16 dark:bg-dark">
       <div
-        class="w-full bg-beam4 bg-no-repeat bg-center dark:bg-beam3"
-      >
+        class="bg-beam4 bg-no-repeat bg-center dark:bg-beam3"
+      > 
         <div class="container">
           <div class="flex flex-wrap">
             <div class="mx-auto w-full pt-16">
               <div
-                data-aos="zoom-in"
-                data-duration="1000"
+              data-aos="zoom-in"
+              data-duration="800"
+              data-aos-delay="300"
+                
                 class="mx-auto mb-16 max-w-xl text-center"
               >
-                <h4
+                <h4 
+                
                   class="mb-2 text-lg font-semibold text-primary dark:text-white"
                 >
                   Portfolio
@@ -465,9 +465,11 @@
             <div
               class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
             >
-              <div
-                data-aos="zoom-out-right"
-                data-aos-delay="500"
+              <div 
+              data-aos="zoom-in"
+              data-duration="800"
+              data-aos-delay="500"
+              
                 class="p-4 md:w-1/2"
               >
                 <a href="#portfolio" class="block">
@@ -490,8 +492,10 @@
                 </a>
               </div>
               <div
-                data-aos="zoom-out-left"
-                data-aos-delay="500"
+              data-aos="zoom-in"
+              data-duration="800"
+              data-aos-delay="500"
+              
                 class="p-4 md:w-1/2"
               >
                 <a
@@ -516,8 +520,10 @@
                 </a>
               </div>
               <div
-                data-aos="zoom-in-right"
-                data-aos-delay="200"
+              data-aos="zoom-in"
+              data-duration="800"
+              data-aos-delay="500"
+             
                 class="p-4 md:w-1/2"
               >
                 <a href="#portfolio" class="block">
@@ -539,8 +545,10 @@
                 </a>
               </div>
               <div
-                data-aos="zoom-in-left"
-                data-aos-delay="200"
+              data-aos="zoom-in"
+              data-duration="800"
+              data-aos-delay="500"
+              
                 class="p-4 md:w-1/2"
               >
                 <a href="#portfolio" class="block">
@@ -566,7 +574,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
     <!-- Portfolio Section End -->
 
     <!-- Contact Section Start -->
@@ -576,9 +584,7 @@
           class="mx-auto grid max-w-6xl grid-cols-1 py-6 md:grid-cols-2 md:divide-x lg:px-8"
         >
           <div
-            data-aos="fade-right"
-            data-aos-delay="300"
-            data-duration="500"
+           
             class="items-center text-dark dark:text-white"
           >
             <h1 class="text-4xl font-bold">Hubungi</h1>
@@ -633,9 +639,7 @@
             </div>
           </div>
           <div
-            data-aos="fade-left"
-            data-aos-delay="300"
-            data-duration="500"
+         
             class="mt-6 py-6 md:py-0 md:px-8"
           >
             <div class="items-center">
@@ -677,7 +681,7 @@
 
             <div class="mt-6 flex justify-center">
               <button
-                class="rounded-xl bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                class="rounded-xl bg-primary py-3 px-8 text-sm font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
               >
                 Kirim Pesan
               </button>
@@ -735,7 +739,7 @@
 
             <!-- Whatsup -->
             <a
-              href="https://wa.me/089646378051"
+              href="https://wa.me/+6289646378051"
               target="_blank"
               class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
             >
