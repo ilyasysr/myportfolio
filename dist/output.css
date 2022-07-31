@@ -1024,11 +1024,11 @@ video {
 }
 
 .bg-bg-section {
-  background-image: url('/dist/img/bg-section.jpg');
+  background-image: url('../../dist/img/bg-section.jpg');
 }
 
 .bg-bg-section-3-light {
-  background-image: url('/dist/img/bg-section-3-light.png');
+  background-image: url('../../dist/img/bg-section-3-light.png');
 }
 
 .bg-cover {
@@ -1533,11 +1533,11 @@ video {
 }
 
 .dark .dark\:bg-bg-hero-dark {
-  background-image: url('/dist/img/bg-hero-dark.jpg');
+  background-image: url('../../dist/img/bg-hero-dark.jpg');
 }
 
 .dark .dark\:bg-bg-section-3 {
-  background-image: url('/dist/img/bg-section-3.png');
+  background-image: url('../../dist/img/bg-section-3.png');
 }
 
 .dark .dark\:text-white {
