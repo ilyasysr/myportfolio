@@ -1023,12 +1023,12 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.bg-headerbeam {
-  background-image: url('../dist/img/bg-section.jpg');
+.bg-bg-section {
+  background-image: url('/dist/img/bg-section.jpg');
 }
 
-.bg-beam4 {
-  background-image: url('../dist/img/bg-section-3-light.png');
+.bg-bg-section-3-light {
+  background-image: url('/dist/img/bg-section-3-light.png');
 }
 
 .bg-cover {
@@ -1532,12 +1532,12 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-hiro {
-  background-image: url('../dist/img/bg-hero-dark.jpg');
+.dark .dark\:bg-bg-hero-dark {
+  background-image: url('/dist/img/bg-hero-dark.jpg');
 }
 
-.dark .dark\:bg-beam3 {
-  background-image: url('../dist/img/bg-section-3.png');
+.dark .dark\:bg-bg-section-3 {
+  background-image: url('/dist/img/bg-section-3.png');
 }
 
 .dark .dark\:text-white {
