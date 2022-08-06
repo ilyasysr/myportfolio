@@ -88,10 +88,44 @@ moon.addEventListener("click", () => {
 themeCheck();
 
 // target element hide alert
-function closeAlert(event){
+function closeAlert(event) {
   let element = event.target;
-  while(element.nodeName !== "BUTTON"){
+  while (element.nodeName !== "BUTTON") {
     element = element.parentNode;
   }
   element.parentNode.parentNode.removeChild(element.parentNode);
 }
+
+const sidebar = document.querySelector("#sidebar");
+const togleColor = document.querySelector("#togle-color");
+togleColor.addEventListener("click", function () {
+  sidebar.classList.toggle("translate-x-0");
+  sidebar.classList.toggle("-translate-x-full");
+});
+
+let themeBtn = document.querySelectorAll(".btn-color");
+const userColor = localStorage.getItem("color");
+
+const colorCheck = () => {
+  if (userColor != undefined && userColor != "") {
+    document
+      .querySelector(":root")
+      .style.setProperty("--warna-tema", userColor);
+  } else {
+    document
+      .querySelector(":root")
+      .style.setProperty("--warna-tema", "79 70 229");
+  }
+};
+
+themeBtn.forEach((color) => {
+  color.addEventListener("click", () => {
+    let dataColor = color.getAttribute("data-color");
+    document
+      .querySelector(":root")
+      .style.setProperty("--warna-tema", dataColor);
+    localStorage.setItem("color", dataColor);
+  });
+});
+
+colorCheck();

@@ -42,3 +42,7 @@
   background-size: 32px 32px;
   background-color: rgba(71, 211, 255, 0);
 }
+
+.btn-color {
+  @apply h-8 w-8 rounded border hover:ring-2 hover:ring-inset hover:ring-gray-100;
+}

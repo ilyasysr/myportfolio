@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -139,7 +139,92 @@
       </div>
     </header>
     <!-- Header End -->
-
+    <section
+      id="sidebar"
+      class="fixed left-0 z-40 max-h-screen translate-y-1 shadow-xl bottom-1/2 bg-gray-700 rounded-r-2xl -translate-x-full transition-transform duration-300 transform"
+    >
+      <div class="flex flex-col items-center justify-center">
+        <div class="grid py-3 grid-cols-2 gap-1 px-3 grid-">
+          <button
+            type="button"
+            class="btn-color bg-orange-500 border-orange-900"
+            title="Set primary color to orange"
+            data-color="249 115 22"
+            value="orange"
+          ></button
+          ><button
+            type="button"
+            class="btn-color bg-yellow-500 border-yellow-900"
+            title="Set primary color to yellow"
+            data-color="234 179 8"
+            value="yellow"
+          ></button
+          ><button
+            type="button"
+            class="btn-color bg-lime-500 border-lime-900"
+            title="Set primary color to lime"
+            data-color="132 204 22"
+            value="lime"
+          ><button
+            type="button"
+            class="btn-color bg-teal-500 border-teal-900"
+            title="Set primary color to teal"
+            data-color="10 184 166"
+          ></button
+          ><button
+            type="button"
+            class="btn-color bg-sky-500 border-sky-900"
+            title="Set primary color to sky"
+            data-color="14 165 233"
+          ></button
+          ><button
+            type="button"
+            class="btn-color bg-cyan-500 border-purple-900"
+            title="Set primary color to cyan"
+            data-color="6 182 212"
+          ></button
+            ><button
+            type="button"
+            class="btn-color bg-indigo-600 border-indigo-900"
+            title="Set primary color to indigo"
+            data-color="79 70 229"
+          ></button
+          ><button
+            type="button"
+            class="btn-color bg-violet-500 border-violet-900"
+            title="Set primary color to violet"
+            data-color="124 58 237"
+          ></button
+          ><button
+            type="button"
+            class="btn-color bg-pink-500 border-pink-900"
+            title="Set primary color to pink"
+            data-color="236 72 153"
+          ></button
+          ><button
+            type="button"
+            class="btn-color bg-rose-500 border-rose-900 "
+            title="Set primary color to rose"
+            data-color="244 63 94"
+          ></button
+          ><!---->
+        </div>
+        <button
+          id="togle-color"
+          type="button"
+          class="absolute flex items-center justify-center h-32 transform translate-y-1/2 w-7 bottom-1/2 rounded-r-xl left-full bg-gray-700 text-gray-50 focus:outline-none"
+        >
+          <span class="sr-only">Toggle</span
+          ><span
+            class="font-mono text-sm antialiased font-medium"
+            style="writing-mode: vertical-lr; text-orientation: upright"
+          >
+            COLORS </span
+          ><span class="sr-only">menu</span>
+        </button>
+      </div>
+    </section>
+    
     <!-- Hero Section Start -->
     <section
       id="home"
@@ -171,7 +256,7 @@
             >
               <a
                 href="https://wa.me/+6289646378051"
-                class="inline-flex items-center justify-center space-x-2 rounded-xl bg-indigo-600 px-6 py-4 font-semibold leading-6 text-white hover:border-indigo-600 hover:bg-indigo-800 hover:text-white active:border-indigo-600 active:bg-indigo-600"
+                class="inline-flex items-center justify-center space-x-2 rounded-xl bg-primary px-6 py-4 font-semibold leading-6 text-white hover:border-primary hover:bg-primary/80 hover:text-white active:border-primary active:bg-primary"
               >
                 <svg
                   fill="currentColor"
@@ -209,7 +294,7 @@
             </div>
             <!-- social - start -->
             <div
-              class="mt-8 flex items-center justify-center gap-4 sm:mt-16 lg:mt-64 lg:justify-start"
+              class="mt-8 flex items-center justify-center gap-4 sm:mt-16 lg:mt-32 lg:justify-start"
             >
               <span
                 class="text-sm font-semibold uppercase tracking-widest text-gray-400 sm:text-base"
@@ -299,8 +384,9 @@
           </div>
 
           <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative lg:right-0 lg:mt-9">
-              <svg
+            <div class="relative mt-10 lg:right-0 lg:mt-0">
+              <div class="relative z-10 mx-auto max-w-full">
+                <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500"
@@ -309,6 +395,7 @@
                 filter="blur(0px)"
                 style="opacity: 1"
                 transform="rotate(0)"
+
               >
                 <image
                   x="0"
@@ -320,26 +407,8 @@
                   href="dist/img/bg-ilyas-w.png"
                   preserveAspectRatio=""
                 ></image>
-                <defs>
-                  <linearGradient
-                    id="gradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      style="stop-color: rgb(238, 205, 163)"
-                    ></stop>
-                    <stop
-                      offset="100%"
-                      style="stop-color: rgb(239, 98, 159)"
-                    ></stop>
-                  </linearGradient>
-                </defs>
                 <clipPath id="shape">
-                  <path id="blob" fill="url(#gradient)">
+                  <path id="blob" fill="">
                     <animate
                       attributeName="d"
                       dur="10000ms"
@@ -348,13 +417,30 @@
                     ></animate>
                   </path>
                 </clipPath>
-              </svg>
-            </div>
+              </svg>        
+              </div>
+              
+              <span class="absolute bottom-0 w-full top-0">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg">
+                  <path id="blob" fill="rgb(var(--warna-tema))">
+                    <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;">   
+                    </animate>
+                  </path>
+                </svg>
+              </span>
+              </div>
+            
           </div>
         </div>
       </div>
     </section>
     <!-- Hero Section End -->
+
+    <!-- sidebar Color Start-->
+    <section>
+      
+    </section>
+    <!-- sidebar Color End-->
 
     <!-- About Section Start -->
     <section id="about" class="bg-grid pt-36 pb-36 dark:bg-dark">
@@ -429,14 +515,14 @@
             data-aos="zoom-in"
             data-duration="1000"
             data-aos-delay="300"
-            class="relative w-96 overflow-hidden rounded-2xl bg-indigo-400 p-6 shadow-lg md:mb-4 lg:mr-4 lg:mb-0"
+            class="relative w-96 overflow-hidden rounded-2xl bg-primary/40 p-6 shadow-lg md:mb-4 lg:mr-4 lg:mb-0"
           >
             <img
               alt="moto"
-              src="dist/img/logo/Tagcode.svg"
+              src="dist/img/logo/Tagcode-w.svg"
               class="absolute -right-10 -bottom-16 mb-4 bg-cover md:mb-4"
             />
-            <div class="w-4/6 text-lg font-bold md:text-2xl lg:text-2xl">
+            <div class="w-4/6 text-lg font-bold text-white md:text-2xl lg:text-2xl">
               Web Development
             </div>
           </div>
@@ -444,14 +530,14 @@
             data-aos="zoom-in"
             data-duration="1000"
             data-aos-delay="300"
-            class="relative mt-4 w-96 overflow-hidden rounded-2xl bg-indigo-400 p-6 shadow-lg md:mt-0 lg:mt-0"
+            class="relative mt-4 w-96 overflow-hidden rounded-2xl bg-primary/40 p-6 shadow-lg md:mt-0 lg:mt-0"
           >
             <img
               alt="moto"
-              src="dist/img/logo/Desain Grafis.svg"
+              src="dist/img/logo/Desain Grafis-w.svg"
               class="absolute -right-10 -bottom-16 mb-4 bg-cover"
             />
-            <div class="w-4/6 text-lg font-bold md:text-2xl lg:text-2xl">
+            <div class="w-4/6 text-lg text-white font-bold md:text-2xl lg:text-2xl">
               Graphic Design
             </div>
           </div>
@@ -696,7 +782,7 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span>Nagrak Selatan Kab Sukabumi, 43356</span>
+                <span>Ciputat, Tanggerang Selatan, 15419</span>
               </p>
               <p class="flex items-center">
                 <svg
@@ -735,12 +821,12 @@
           <div class="mt-6 py-6 md:py-0 md:px-8">
             <!-- alert -->
             <div
-              class="alert mb-4 flex hidden rounded-lg bg-green-100 p-4 dark:bg-green-200"
+              class="alert mb-4 flex hidden rounded-lg bg-primary/50 p-4 dark:bg-primary/40"
               role="alert"
             >
               <svg
                 aria-hidden="true"
-                class="h-5 w-5 flex-shrink-0 text-green-700 dark:text-green-800"
+                class="h-5 w-5 flex-shrink-0 text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -753,14 +839,14 @@
               </svg>
               <span class="sr-only">Info</span>
               <div
-                class="ml-3 text-sm font-medium text-green-700 dark:text-green-800"
+                class="ml-3 text-sm font-medium text-white"
               >
                 Terima kasih. Pesan anda sudah kami terima.
               </div>
               <button
                 onclick="closeAlert(event)"
                 type="button"
-                class="-mx-1.5 -my-1.5 ml-auto inline-flex h-8 w-8 rounded-lg bg-green-100 p-1.5 text-green-500 hover:bg-green-200 focus:ring-2 focus:ring-green-400 dark:bg-green-200 dark:text-green-600 dark:hover:bg-green-300"
+                class="-mx-1.5 -my-1.5 ml-auto inline-flex h-8 w-8 rounded-lg bg-primary/80 p-1.5 text-white hover:bg-primary/90 focus:ring-2 focus:ring-primary/50 dark:bg-primary/60  dark:hover:bg-primary/40"
                 data-dismiss-target="#alert-3"
                 aria-label="Close"
               >
@@ -790,7 +876,7 @@
                   >
 
                   <input
-                    class="block w-full rounded-xl border bg-white px-4 py-2 text-gray-700 focus:border-indigo-600 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300"
+                    class="block w-full rounded-xl border bg-white px-4 py-2 text-gray-700 focus:border-primary/50 focus:outline-none focus:ring focus:ring-primary/30 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-primary"
                     type="text"
                     name="nama"
                   />
@@ -803,7 +889,7 @@
                   >
 
                   <input
-                    class="block w-full rounded-xl border bg-white px-4 py-2 text-gray-700 focus:border-indigo-600 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300"
+                    class="block w-full rounded-xl border bg-white px-4 py-2 text-gray-700 focus:border-primary focus:outline-none focus:ring focus:ring-primary/30 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-primary"
                     type="email"
                     name="email"
                   />
@@ -818,7 +904,7 @@
 
                 <textarea
                   name="pesan"
-                  class="block h-40 w-full rounded-xl border bg-white px-4 py-2 text-gray-700 focus:border-indigo-600 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300"
+                  class="block h-40 w-full rounded-xl border bg-white px-4 py-2 text-gray-700 focus:border-primary focus:outline-none focus:ring focus:ring-primary/30 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-primary"
                 ></textarea>
               </div>
 
@@ -833,7 +919,7 @@
                 <button
                   disabled
                   type="button"
-                  class="btn-loading mr-2 inline-flex hidden items-center rounded-xl bg-indigo-500 py-3 px-6 text-sm font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                  class="btn-loading mr-2 inline-flex hidden items-center rounded-xl bg-primary py-3 px-6 text-sm font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                 >
                   <svg
                     class="-ml-1 mr-3 h-5 w-5 animate-spin text-white"

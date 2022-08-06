@@ -9,7 +9,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#4438ca",
+        primary: "rgb(var(--warna-tema) / <alpha-value>)",
         secondary: "#64748b",
         dark: "#0f172a",
       },
@@ -17,10 +17,10 @@ module.exports = {
         "2xl": "1320px",
       },
       backgroundImage: {
-        'bg-section': "url('../../dist/img/bg-section.jpg')",
-        'bg-section-3': "url('../../dist/img/bg-section-3.png')",
-        'bg-section-3-light': "url('../../dist/img/bg-section-3-light.png')",
-        'bg-hero-dark': "url('../../dist/img/bg-hero-dark.jpg')",
+        "bg-section": "url('../../dist/img/bg-section.jpg')",
+        "bg-section-3": "url('../../dist/img/bg-section-3.png')",
+        "bg-section-3-light": "url('../../dist/img/bg-section-3-light.png')",
+        "bg-hero-dark": "url('../../dist/img/bg-hero-dark.jpg')",
       },
     },
   },
